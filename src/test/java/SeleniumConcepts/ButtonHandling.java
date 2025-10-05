@@ -32,12 +32,16 @@ public class ButtonHandling {
 		System.out.println("\nThe color of the button: "+color);
 		
 		// Find the height & width of the button
-		Rectangle rect = driver.findElement(By.id("property")).getRect();
+		WebElement element1 = driver.findElement(By.id("property"));
+		Rectangle rect = element1.getRect();
 		System.out.println("\nFinding x, y, width and height using rectangle class:");
 		System.out.println("The x and y coordinates: "+rect.getPoint());
 		System.out.println("The width: "+rect.getWidth());
 		System.out.println("The height: "+rect.getHeight());
-		Dimension dime = rect.getDimension();
+		
+		WebElement element2 = driver.findElement(By.id("property"));
+		Rectangle rect1 = element2.getRect();
+		Dimension dime = rect1.getDimension();
 		System.out.println("\nFinding width and height using dimension class:");
 		System.out.println("The dimension: "+dime);
 		System.out.println("The width: "+dime.getWidth());
