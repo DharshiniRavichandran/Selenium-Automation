@@ -41,7 +41,7 @@ public class AlertsHandling {
 		String name = driver.findElement(By.id("myName")).getText();
         System.out.println(name);
         
-		// quit the browser
+		//quit the browser
 		driver.quit();
 	}
 
