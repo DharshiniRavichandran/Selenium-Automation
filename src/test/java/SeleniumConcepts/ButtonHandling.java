@@ -31,7 +31,7 @@ public class ButtonHandling {
 		String color = driver.findElement(By.id("color")).getCssValue("background-color");
 		System.out.println("\nThe color of the button: "+color);
 		
-		// Find the height & width of the button
+		// Find the height & width of the button	
 		WebElement element1 = driver.findElement(By.id("property"));
 		Rectangle rect = element1.getRect();
 		System.out.println("\nFinding x, y, width and height using rectangle class:");

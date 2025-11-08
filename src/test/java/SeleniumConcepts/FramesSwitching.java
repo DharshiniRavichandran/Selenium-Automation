@@ -21,7 +21,7 @@ public class FramesSwitching {
 		driver.switchTo().frame(myFrame);
 		driver.findElement(By.name("fname")).sendKeys("koushik");
 		driver.findElement(By.name("lname")).sendKeys("C");
-        //driver.switchTo().frame(0).switchTo().frame(0);-->Directly doing to the inner child frame
+        //driver.switchTo().frame(0).switchTo().frame(0);-->Directly going to the inner child frame
 		driver.switchTo().frame(0);
 		driver.findElement(By.name("email")).sendKeys("email");
 		//Going back to the parent frame
@@ -30,7 +30,7 @@ public class FramesSwitching {
 		//Going back to the main frame
 		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("//button[text()='Watch tutorial']")).click();
-		
+	
 		//quit the browser
 		driver.quit();
 	}
